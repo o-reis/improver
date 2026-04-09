@@ -85,7 +85,7 @@ User memory (`memory/history/`) is gitignored by default to protect privacy.
 
 ## Contributing
 
-Contributions welcome! See [docs/](docs/) for architecture details.
+Contributions welcome! See [the documentation](improver/docs/) for architecture details.
 
 ## License
 
