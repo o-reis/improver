@@ -52,11 +52,11 @@ improver/
 
 ## Documentation
 
-- [Installation Guide](docs/INSTALL.md)
-- [Architecture](docs/ARCHITECTURE.md)
-- [Workflow](docs/WORKFLOW.md)
-- [Configuration](docs/CONFIGURATION.md)
-- [Changelog](docs/CHANGELOG.md)
+- [Installation Guide](improver/docs/INSTALL.md)
+- [Architecture](improver/docs/ARCHITECTURE.md)
+- [Workflow](improver/docs/WORKFLOW.md)
+- [Configuration](improver/docs/CONFIGURATION.md)
+- [Changelog](improver/docs/CHANGELOG.md)
 
 ## Available Skills
 
