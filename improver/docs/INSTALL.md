@@ -1,5 +1,9 @@
 # Installation Guide
 
+## IMPORTANT
+
+**For OpenCode, instead of CLAUDE.md write AGENTS.md!**
+
 ## Prerequisites
 
 - Claude Code, OpenCode, or any agentic AI tool that reads configuration from project directories
@@ -10,7 +14,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/improver.git
+git clone https://github.com/o-reis/improver.git
 
 # Or download and extract
 ```
@@ -91,7 +95,7 @@ your-project/
 
 ### MCP Servers (Optional)
 
-For web search functionality, configure MCP servers:
+For web search functionality (Opencode already has this feature!), configure MCP servers:
 
 1. Install required packages:
 ```bash
