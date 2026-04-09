@@ -1,0 +1,7 @@
+# Memory and history
+# User-specific problem-solving history
+improver/memory/history/
+improver/memory/*.md
+
+# Local configuration
+.improver.local.yaml

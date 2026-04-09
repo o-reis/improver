@@ -1,0 +1,92 @@
+# Improver
+
+**Context Engineering Architecture for AI Agentic Tools**
+
+A systematic framework for improving AI decision-making through structured information gathering, research, and recommendations.
+
+## What Is Improver?
+
+Improver provides AI agents with:
+
+- **Structured question protocols** - Gather complete context before recommending
+- **Research workflows** - Web search integration and knowledge synthesis
+- **Pattern memory** - Learn from past recommendations
+- **Domain expertise** - 7 skill domains ready to use
+
+## Quick Start
+
+```
+/improve <your problem>
+```
+
+Example:
+```
+/improve I want to start a tech startup but don't know where to begin
+/improve I'm struggling to land my first software developer job
+/improve How can I build an audience for my music?
+```
+
+## Features
+
+| Feature | Description |
+|---------|-------------|
+| **3-Phase Workflow** | Gather → Research → Recommend |
+| **7 Domain Skills** | Career, Creative, Business, Tech, Health, Education, Base |
+| **100+ Patterns** | Proven approaches per domain |
+| **Memory System** | Learn from past sessions |
+| **MCP Integration** | Web search and file access |
+
+## Architecture
+
+```
+improver/
+├── commands/          # /improve workflow
+├── prompts/           # Phase templates
+├── skills/            # Domain knowledge
+├── patterns/          # Learned patterns
+├── rules/              # Constraints
+├── memory/             # Problem history
+├── mcp/                # Tool configs
+└── docs/               # Documentation
+```
+
+## Documentation
+
+- [Installation Guide](docs/INSTALL.md)
+- [Architecture](docs/ARCHITECTURE.md)
+- [Workflow](docs/WORKFLOW.md)
+- [Configuration](docs/CONFIGURATION.md)
+- [Changelog](docs/CHANGELOG.md)
+
+## Available Skills
+
+| Skill | Use For |
+|-------|---------|
+| `base` | General purpose, fallback |
+| `career` | Job hunting, promotions, transitions |
+| `creative` | Music, art, writing, performance |
+| `business` | Startups, entrepreneurship |
+| `tech` | Software development |
+| `health` | Fitness, nutrition, wellness |
+| `education` | Learning, studying, certifications |
+
+## How It Works
+
+1. **User invokes `/improve`** with a problem statement
+2. **AI detects domain** from keywords and loads relevant skill
+3. **Phase 1: Gather** - Asks structured questions
+4. **Phase 2: Research** - Searches web for insights
+5. **Phase 3: Recommend** - Generates prioritized actions
+6. **Phase 4: Store** - Saves to memory for future reference
+
+## Privacy
+
+User memory (`memory/history/`) is gitignored by default to protect privacy.
+
+## Contributing
+
+Contributions welcome! See [docs/](docs/) for architecture details.
+
+## License
+
+MIT

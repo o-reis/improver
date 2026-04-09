@@ -1,0 +1,53 @@
+skill:
+  name: tech
+  display_name: Technology & Software
+  description: Software development, tech skills, and technical decisions
+  
+  keywords:
+    - programming
+    - software
+    - code
+    - developer
+    - engineer
+    - technical
+    - algorithm
+    - database
+    - api
+    - cloud
+    - devops
+    - security
+    
+  priority: 10
+
+gathering:
+  skill_specific_questions:
+    - What is your current technical level?
+    - What programming languages do you know?
+    - What is the project you are working on?
+    - What technical decisions are you facing?
+    - Are you building solo or with a team?
+
+  project_questions:
+    - What problem does this solve?
+    - Who are the users?
+    - What is your technology stack preference?
+    - What are your performance requirements?
+    - What is your timeline?
+
+research:
+  focus_areas:
+    - Technology trends
+    - Best practices
+    - Tool comparisons
+    - Performance optimization
+    - Security considerations
+    
+  query_templates:
+    - "{technology} best practices 2024"
+    - "{language} vs {alternative}"
+    - "{problem} solution architecture"
+    - "{framework} performance benchmark"
+    - "developer tools {category}"
+
+patterns:
+  source: patterns/tech.md

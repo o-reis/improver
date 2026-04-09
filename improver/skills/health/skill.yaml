@@ -1,0 +1,56 @@
+skill:
+  name: health
+  display_name: Health & Wellness
+  description: Fitness, nutrition, mental health, and personal wellness
+  
+  keywords:
+    - health
+    - fitness
+    - exercise
+    - workout
+    - diet
+    - nutrition
+    - mental
+    - stress
+    - sleep
+    - wellness
+    - weight
+    - muscle
+    - running
+    - gym
+    - meditation
+    
+  priority: 10
+
+gathering:
+  skill_specific_questions:
+    - What is your current health status?
+    - Do you have any medical conditions or injuries?
+    - What is your current fitness level?
+    - What are your health goals?
+    - Do you have access to gym equipment, outdoors, etc.?
+
+  lifestyle_questions:
+    - What does your typical day look like?
+    - How much time can you dedicate to health?
+    - What is your current diet like?
+    - How is your sleep quality?
+    - What is your stress level?
+
+research:
+  focus_areas:
+    - Evidence-based practices
+    - Safety considerations
+    - Sustainable approaches
+    - Scientific research
+    - Professional guidelines
+    
+  query_templates:
+    - "evidence-based {goal} methods"
+    - "beginner {activity} program"
+    - "nutrition science {topic}"
+    - "mental health {issue} research"
+    - "{health_goal} safety considerations"
+
+patterns:
+  source: patterns/health.md

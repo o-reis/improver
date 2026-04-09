@@ -1,0 +1,53 @@
+skill:
+  name: business
+  display_name: Entrepreneurship
+  description: Startups, business development, and business strategy
+  
+  keywords:
+    - startup
+    - business
+    - entrepreneur
+    - company
+    - launch
+    - product
+    - customers
+    - revenue
+    - funding
+    - growth
+    - scaling
+    - strategy
+    
+  priority: 10
+
+gathering:
+  skill_specific_questions:
+    - What type of business are you starting or growing?
+    - What stage is your business? (idea, MVP, growth, scale)
+    - Who are your target customers?
+    - What problem does your product solve?
+    - Do you have co-founders or are you solo?
+
+  business_questions:
+    - What is your business model?
+    - How do you acquire customers?
+    - What metrics are you tracking?
+    - What is your current revenue/burn rate?
+    - Are you seeking funding?
+
+research:
+  focus_areas:
+    - Market size and dynamics
+    - Competitor analysis
+    - Business model viability
+    - Customer acquisition channels
+    - Funding landscape
+    
+  query_templates:
+    - "{industry} market size 2024"
+    - "startup {stage} best practices"
+    - "business model canvas {industry}"
+    - "{competitor} analysis"
+    - "startup funding trends 2024"
+
+patterns:
+  source: patterns/business.md

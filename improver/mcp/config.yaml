@@ -1,0 +1,39 @@
+# MCP Configuration
+
+Central configuration for all MCP servers.
+
+```yaml
+mcp:
+  version: "1.0"
+  
+  servers:
+    tavily:
+      enabled: true
+      package: "@modelcontextprotocol/server-tavily"
+      transport: "stdio"
+      
+    filesystem:
+      enabled: true
+      package: "@modelcontextprotocol/server-filesystem"
+      transport: "stdio"
+      config:
+        allowed_directories:
+          - "./improver/memory"
+          - "./improver/patterns"
+          - "./improver/commands"
+          
+  environment:
+    TAVILY_API_KEY: "${TAVILY_API_KEY}"
+    
+  defaults:
+    timeout: 30000
+    retries: 3
+```
+
+## Server Startup
+
+Each server is started as a subprocess and communicates via JSON-RPC over stdio.
+
+## Tool Discovery
+
+Tools are automatically discovered from server manifests and made available to the AI.

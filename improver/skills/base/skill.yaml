@@ -1,0 +1,38 @@
+skill:
+  name: base
+  display_name: General Purpose
+  description: Core skill for any domain without specific expertise
+  
+  keywords:
+    - general
+    - help
+    - advice
+    - improve
+    - goal
+    - problem
+    
+  priority: 0  # Fallback skill
+
+gathering:
+  universal_questions:
+    - What is your current situation?
+    - What have you already tried?
+    - What does success look like to you?
+    - What constraints do you face?
+    - What resources do you have?
+
+research:
+  focus_areas:
+    - Best practices
+    - Common pitfalls
+    - Success factors
+    - Industry trends
+    
+  query_templates:
+    - "how to {goal} effectively"
+    - "best practices for {domain}"
+    - "common mistakes when {action}"
+    - "success factors for {outcome}"
+
+patterns:
+  source: patterns/base.md

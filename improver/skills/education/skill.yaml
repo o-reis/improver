@@ -1,0 +1,52 @@
+skill:
+  name: education
+  display_name: Learning & Education
+  description: Academic pursuits, skill acquisition, and self-education
+  
+  keywords:
+    - learning
+    - study
+    - course
+    - degree
+    - school
+    - university
+    - certification
+    - course
+    - skill acquisition
+    - knowledge
+    - teach
+    - student
+    
+  priority: 10
+
+gathering:
+  skill_specific_questions:
+    - What are you trying to learn?
+    - What is your current level in this subject?
+    - Are you learning for career, hobby, or personal growth?
+    - Do you have a deadline or exam?
+    - What resources do you have access to?
+
+  learning_context_questions:
+    - What is your learning style preference?
+    - How much time can you dedicate daily?
+    - Have you tried learning this before?
+    - What is your typical study environment?
+
+research:
+  focus_areas:
+    - Learning science
+    - Effective study methods
+    - Resource quality
+    - Time management
+    - Memory techniques
+    
+  query_templates:
+    - "evidence-based learning techniques"
+    - "how to learn {subject} effectively"
+    - "{skill} curriculum roadmap"
+    - "best resources to learn {topic}"
+    - "study methods science"
+
+patterns:
+  source: patterns/education.md

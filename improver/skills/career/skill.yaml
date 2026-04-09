@@ -1,0 +1,55 @@
+skill:
+  name: career
+  display_name: Career Development
+  description: Professional growth, job hunting, and career transitions
+  
+  keywords:
+    - job
+    - career
+    - promotion
+    - interview
+    - resume
+    - salary
+    - transition
+    - professional
+    - work
+    - workplace
+    - boss
+    - colleague
+    - office
+    - remote
+    - employment
+    
+  priority: 10
+
+gathering:
+  skill_specific_questions:
+    - What is your current role and industry?
+    - How long have you been in your current position?
+    - What are your primary responsibilities?
+    - Are you looking to advance, lateral move, or leave entirely?
+    - Do you have specific companies or roles in mind?
+
+  growth_questions:
+    - What skills do you want to develop?
+    - What would your ideal role look like?
+    - What is blocking your advancement now?
+    - What have others in similar positions done?
+
+research:
+  focus_areas:
+    - Industry trends and demand
+    - Skill requirements for target roles
+    - Salary benchmarks
+    - Career path examples
+    - Job market conditions
+    
+  query_templates:
+    - "{role} career path examples"
+    - "{industry} job market trends 2024"
+    - "skills needed for {target_role}"
+    - "{role} salary range"
+    - "how to transition to {field}"
+
+patterns:
+  source: patterns/career.md

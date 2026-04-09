@@ -1,0 +1,53 @@
+skill:
+  name: creative
+  display_name: Creative Arts
+  description: For artists, musicians, writers, and performers
+  
+  keywords:
+    - music
+    - art
+    - singer
+    - artist
+    - musician
+    - writer
+    - creative
+    - band
+    - album
+    - song
+    - portfolio
+    - creative career
+    - artistic
+    
+  priority: 10
+
+gathering:
+  skill_specific_questions:
+    - What is your artistic discipline and current level?
+    - Are you pursuing this professionally, semi-professionally, or as a hobby?
+    - Do you have an existing body of work to share?
+    - What genre or style do you work in?
+    - Are you signed, independent, or seeking representation?
+
+  industry_questions:
+    - Who is your target audience?
+    - Where are you based? (affects industry access)
+    - Do you have industry connections or mentorship?
+    - What platforms are you currently using?
+
+research:
+  focus_areas:
+    - Industry landscape and gatekeepers
+    - Successful artists with similar profiles
+    - Platform algorithms and discovery
+    - Monetization strategies
+    - Industry trends and shifts
+    
+  query_templates:
+    - "independent {discipline} success stories 2024"
+    - "how to build {genre} audience"
+    - "{discipline} industry gatekeepers"
+    - "social media for {discipline}"
+    - "monetizing {discipline} without label"
+
+patterns:
+  source: patterns/creative.md

@@ -1,0 +1,30 @@
+safety:
+  confirmation_required:
+    - destructive_operations
+    - irreversible_changes
+    - personal_data_access
+    
+  transparency:
+    explain_reasoning: always
+    disclose_limitations: always
+    cite_sources: always
+    
+  scope:
+    stay_within_user_request: true
+    no_unasked_recommendations: true
+    respect_withdrawal: true
+    
+  privacy:
+    no_pii_logging: true
+    secure_memory_storage: true
+    user_ownership: true
+    
+  quality:
+    no_hallucination: required
+    source_verification: required
+    uncertainty_admission: required
+    
+  escalation:
+    unknown_domain: request_guidance
+    insufficient_context: gather_more
+    conflicting_data: present_both_sides

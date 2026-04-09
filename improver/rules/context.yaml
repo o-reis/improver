@@ -1,0 +1,58 @@
+context:
+  max_tokens: 100000
+  compression_threshold: 0.7
+  layers:
+    - system_instructions
+    - long_term_memory
+    - retrieved_documents
+    - tool_definitions
+    - recent_conversation
+    - current_task
+
+  layer_rules:
+    system_instructions:
+      source: prompts/system.md
+      update_frequency: rarely
+      
+    long_term_memory:
+      source: memory/history/
+      retrieval: semantic_search
+      max_entries: 50
+      
+    retrieved_documents:
+      source: web_search
+      relevance_threshold: 0.7
+      max_sources: 10
+      
+    tool_definitions:
+      source: mcp/config.yaml
+      validation: required
+      
+    recent_conversation:
+      retention: full_session
+      compression: on_overflow
+      
+    current_task:
+      persistence: none
+      priority: highest
+
+memory:
+  storage_format: markdown
+  index_file: memory/INDEX.md
+  history_folder: memory/history/
+  patterns_folder: patterns/
+  
+  entry_format:
+    required_fields:
+      - title
+      - date
+      - tags
+    optional_fields:
+      - context
+      - recommendations
+      - outcome
+      - follow_up
+      
+  retention:
+    archive_after_days: 365
+    pattern_extraction: automatic
