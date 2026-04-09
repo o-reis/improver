@@ -2,7 +2,11 @@
 
 **Context Engineering Architecture for AI Agentic Tools**
 
-A systematic framework for improving AI decision-making through structured information gathering, research, and recommendations.
+A systematic framework for improving AI decision-making through structured information gathering, research, and recommendations. 
+
+## IMPORTANT
+
+This README.md as well as all the files were initially made using OpenCode "Big Pickle" AI "agentic" model. There may exist some inaccuracies that I haven't found yet. I am still doing tests to ensure the framework works properly.
 
 ## What Is Improver?
 
