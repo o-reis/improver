@@ -44,9 +44,7 @@ If your project doesn't have a `CLAUDE.md`, create one:
 
 This project uses Improver for structured problem solving.
 
-```
 /improve <your problem>
-```
 
 For details, see `improver/IMPROVER.md`.
 ```
