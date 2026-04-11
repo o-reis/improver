@@ -2,7 +2,11 @@
 
 **Context Engineering Architecture for AI Agentic Tools**
 
-A systematic framework for improving AI decision-making through structured information gathering, research, and recommendations.
+A systematic framework for improving AI decision-making through structured information gathering, research, and recommendations. 
+
+## IMPORTANT
+
+This README.md as well as all the files were initially made using OpenCode "Big Pickle" AI "agentic" model. There may exist some inaccuracies that I haven't found yet. I am still doing tests to ensure the framework works properly.
 
 ## What Is Improver?
 
@@ -52,11 +56,11 @@ improver/
 
 ## Documentation
 
-- [Installation Guide](docs/INSTALL.md)
-- [Architecture](docs/ARCHITECTURE.md)
-- [Workflow](docs/WORKFLOW.md)
-- [Configuration](docs/CONFIGURATION.md)
-- [Changelog](docs/CHANGELOG.md)
+- [Installation Guide](improver/docs/INSTALL.md)
+- [Architecture](improver/docs/ARCHITECTURE.md)
+- [Workflow](improver/docs/WORKFLOW.md)
+- [Configuration](improver/docs/CONFIGURATION.md)
+- [Changelog](improver/docs/CHANGELOG.md)
 
 ## Available Skills
 
@@ -85,7 +89,7 @@ User memory (`improver/memory/history/`) is gitignored by default to protect pri
 
 ## Contributing
 
-Contributions welcome! See [docs/](docs/) for architecture details.
+Contributions welcome! See [the documentation](improver/docs/) for architecture details.
 
 ## License
 

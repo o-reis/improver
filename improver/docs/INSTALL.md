@@ -1,5 +1,9 @@
 # Installation Guide
 
+## IMPORTANT
+
+**For OpenCode, instead of CLAUDE.md write AGENTS.md!**
+
 ## Prerequisites
 
 - Claude Code, OpenCode, or any agentic AI tool that reads configuration from project directories
@@ -10,14 +14,14 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/improver.git
+git clone https://github.com/o-reis/improver.git
 
 # Or download and extract
 ```
 
 ### 2. Place in Project Root
 
-Copy the `improver/` folder into your project root:
+Copy the `improver/` folder (the one inside, aka improver/**improver/**) into your project root:
 
 ```
 your-project/
@@ -29,11 +33,20 @@ your-project/
 
 ### 3. Copy CLAUDE.md
 
-Copy the `CLAUDE.md` file from the improver folder to your project root:
+Copy the `CLAUDE.md` file from the improver folder to your project root.
+
+For Claude Code users:
 
 ```bash
 cp improver/CLAUDE.md ./CLAUDE.md
 ```
+
+For OpenCode users:
+
+```bash
+cp improver/CLAUDE.md ./AGENTS.md
+```
+
 
 This file contains all the Improver integration rules that the AI model needs to follow.
 
@@ -61,7 +74,7 @@ your-project/
 
 ### MCP Servers (Optional)
 
-For web search functionality, configure MCP servers:
+For web search functionality (Opencode already has this feature!), configure MCP servers:
 
 1. Install required packages:
 ```bash
