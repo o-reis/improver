@@ -38,8 +38,8 @@ When multiple skills match, the most specific match wins.
 
 ## Creating New Skills
 
-1. Create folder: `skills/{domain}/`
+1. Create folder: `improver/skills/{domain}/`
 2. Add `skill.yaml` with metadata
 3. Add domain-specific prompt files
-4. Add patterns to `patterns/{domain}.md`
+4. Add patterns to `improver/patterns/{domain}.md`
 5. Update this index

@@ -81,7 +81,7 @@ improver/
 
 ## Privacy
 
-User memory (`memory/history/`) is gitignored by default to protect privacy.
+User memory (`improver/memory/history/`) is gitignored by default to protect privacy.
 
 ## Contributing
 

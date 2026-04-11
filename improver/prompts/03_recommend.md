@@ -1,20 +1,46 @@
 # Phase 3: Recommendations
 
+## ⚠️ Recommendations Must Be VISIBLE
+
+ALL recommendations MUST appear in your visible output. Never generate recommendations in internal thinking.
+
+```
+WRONG:
+[Thinking: generates plan internally]
+question(...)
+User sees ONLY the question!
+
+CORRECT:
+## My Recommendations
+1. [Full details visible]
+question(...)
+User sees recommendations AND question
+```
+
 ## Objective
-Generate actionable, prioritized guidance based on gathered context and research.
+
+Generate actionable, prioritized guidance based on gathered context and iterative research.
 
 ## Recommendation Protocol
 
 ### Step 1: Pattern Check
+- Review patterns from `improver/patterns/{domain}.md`
+- Review patterns from `improver/patterns/base.md`
+- Check `improver/memory/history/` for similar problems
 
-Before generating new recommendations:
-1. Read `patterns/INDEX.md` for relevant patterns
-2. Search `memory/history/` for similar problems
-3. Apply learned insights to current situation
+### Step 2: Confidence Check
 
-### Step 2: Recommendation Generation
+Before showing recommendations, verify:
+- Do I have enough information?
+- Is the user's specific situation clear?
+- Is the research specific to their context?
 
-Generate recommendations following this structure:
+**If NO:** Return to gathering phase, ask more questions.
+**If YES:** Proceed.
+
+### Step 3: Generate Recommendations
+
+⚠️ Generate recommendations in VISIBLE OUTPUT, not thinking.
 
 #### Immediate Actions (This Week)
 1. **[Action Title]**
@@ -32,32 +58,42 @@ Generate recommendations following this structure:
    - Vision: [end state]
    - Phases: [how to get there]
 
-### Step 3: Prioritization
+### Step 4: Ask Feedback
 
-Rank recommendations by:
-1. **Impact** - How much will this help?
-2. **Effort** - How much work required?
-3. **Timing** - When should this start?
-4. **Dependencies** - What must come first?
+```
+question(
+  questions: [
+    {
+      header: "Feedback",
+      question: "Do these recommendations address your situation?",
+      options: [
+        {label: "Yes, helpful", description: "These are useful"},
+        {label: "Partially", description: "Some aspects help"},
+        {label: "Need more", description: "Need more guidance"},
+        {label: "Different", description: "My situation differs"}
+      ]
+    }
+  ]
+)
+```
 
-Present as priority matrix:
+### Based on Feedback
+- If "Yes" → Store in memory and conclude
+- If "Partially" → Refine recommendations
+- If "Need more" → Additional research
+- If "Different" → Restart gathering loop
 
-| Priority | Action | Impact | Effort | Timeframe |
-|----------|--------|--------|--------|-----------|
-| 1 | [Action] | High | Low | Immediate |
-| 2 | [Action] | High | Medium | Short-term |
-| ... | ... | ... | ... | ... |
+## Research Failure
 
-### Step 4: Risk Assessment
+If web search unavailable:
+```
+## ⚠️ UNVERIFIED RECOMMENDATIONS
+Web search was unavailable. These are based on patterns and general knowledge.
+```
 
-For each high-impact recommendation:
-- What could go wrong?
-- How to mitigate?
-- What is the backup plan?
+## Memory Update
 
-### Step 5: Memory Update
-
-After recommendations, create entry in `memory/history/`:
+Store in `improver/memory/history/`:
 ```
 # Problem: [Brief Title]
 Date: [YYYY-MM-DD]
@@ -68,18 +104,4 @@ Tags: [domain tags]
 
 ## Recommendations Made
 1. [List]
-2. [List]
-
-## Follow-up Notes
-[Space for future reference]
 ```
-
-Note: `memory/INDEX.md` update is optional. The history folder is private and gitignored.
-
-## Recommendation Rules
-
-1. Be specific, not generic
-2. Ground in research findings
-3. Acknowledge user constraints
-4. Provide alternatives
-5. Set realistic expectations

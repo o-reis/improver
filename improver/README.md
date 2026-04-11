@@ -1,31 +1,44 @@
-# Quick Reference
+# Improver
 
-## Invoking Improver
+**Context Engineering for AI Agentic Tools**
+
+A systematic framework that helps AI assistants provide better recommendations.
+
+## Quick Start
 
 ```
-/improve <your problem statement>
+/improve <your problem>
+```
+
+## Examples
+
+```
+/improve I want to get an internship
+/improve How do I grow my music audience?
+/improve I want to start a business
+/improve I'm a beginner guitarist
 ```
 
 ## What Happens
 
-1. **Gather** - Questions to understand your situation
-2. **Research** - Web search for relevant insights
-3. **Recommend** - Actionable guidance
+1. **Questions** - We ask about your specific situation
+2. **Research** - We search for relevant information
+3. **Recommendations** - You get actionable guidance
 
-## What to Expect
+## Features
 
-- Clear questions about your goal
-- Research into best practices
-- Specific, prioritized recommendations
-- Memory of your case for future reference
+| Feature | Description |
+|---------|-------------|
+| 7 Skills | Career, Creative, Business, Tech, Health, Education |
+| Research | Web search for current best practices |
+| Memory | Remembers your case for future reference |
 
-## Example
+## Privacy
 
-```
-/improve I am a rock singer but not achieving success
-```
+Your data is stored locally in `improver/memory/history/` and is gitignored by default.
 
-Response:
-1. Questions about experience, goals, location
-2. Research on rock industry, successful artists
-3. Recommendations tailored to your situation
+## Documentation
+
+- `docs/INSTALL.md` - Installation guide
+- `docs/WORKFLOW.md` - How it works
+- `docs/CONFIGURATION.md` - Customization

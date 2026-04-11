@@ -1,51 +1,42 @@
 # Phase 1: Information Gathering
 
 ## Objective
-Collect complete context before making any recommendations.
 
-## Question Protocol
+Collect complete context through iterative research and dialogue until you have enough information to provide quality recommendations.
 
-Ask questions in this order, adapting to the domain:
+## Workflow
+
+```
+Initial Search → Ask SPECIFIC Questions → User Answers → New Search → More Questions → ... → Gathering Complete
+```
+
+## Question Categories
 
 ### 1. Identity & Background
-- Who are you and what is your current situation?
-- What is your experience level in this domain?
-- What have you already tried?
+- Current situation, experience level, what they've tried
 
 ### 2. Goal Clarification
-- What specific outcome are you trying to achieve?
-- How will you measure success?
-- What is your timeline?
+- Specific outcome, success metrics, timeline
 
 ### 3. Constraints & Resources
-- What limitations do you face? (time, money, skills, etc.)
-- What resources do you have access to?
-- Are there any non-negotiables?
+- Limitations, available resources, non-negotiables
 
 ### 4. Context Factors
-- What external factors affect your situation?
-- Who else is involved?
-- What has prevented progress so far?
+- External factors, people involved, barriers to progress
 
 ## Gathering Rules
 
-1. Ask ONE question at a time or group logically related questions
-2. Listen to answers before asking follow-ups
-3. If information is already provided, acknowledge it and skip
-4. Stop when you have answers to all four categories
-5. Never make recommendations during this phase
+1. Questions must be specific to user's situation
+2. Search after each answer
+3. Iterate until complete
+4. Use answers to refine research
+5. NEVER make recommendations until gathering is complete
 
-## Output
+## When Complete
 
-After gathering, summarize:
-```
-## Collected Context
+Gather is complete when:
+- All four categories covered
+- Answers are specific enough for recommendations
+- No major unknowns remain
 
-**User Profile:** [summary]
-**Goal:** [specific outcome]
-**Constraints:** [list]
-**Timeline:** [if provided]
-**Resources:** [available assets]
-```
-
-Then proceed to Phase 2.
+Then proceed to Phase 2 (Research).

@@ -1,65 +1,57 @@
-# Configuration Files
+# Configuration
 
-YAML configuration specifications.
+Customizing Improver for your needs.
 
-## context.yaml
+## Memory Location
 
-Controls how context is managed:
+Your problem history is stored in `improver/memory/history/`.
 
-```yaml
-context:
-  max_tokens: 100000        # Max context window
-  compression_threshold: 0.7  # When to compress
-  
-  layers:
-    - system_instructions   # Base role
-    - long_term_memory       # Past cases
-    - retrieved_documents    # Search results
-    - tool_definitions       # Available tools
-    - recent_conversation    # Session history
-    - current_task           # Active problem
+This folder is gitignored by default to protect your privacy. If you want to track it in git:
+
+```gitignore
+# To track memory:
+!improver/memory/history/.gitkeep
 ```
 
-## safety.yaml
+## MCP Servers (Optional)
 
-Constraints that cannot be overridden:
+For web search functionality:
 
-```yaml
-safety:
-  confirmation_required:
-    - destructive_operations
-    - irreversible_changes
-    
-  transparency:
-    explain_reasoning: always
-    cite_sources: always
-    
-  scope:
-    stay_within_user_request: true
-    no_unasked_recommendations: true
-```
+### Tavily (Web Search)
 
-## skill.yaml
+1. Get an API key from [tavily.com](https://tavily.com)
+2. Install:
+   ```bash
+   npm install -g @modelcontextprotocol/server-tavily
+   ```
+3. Set environment variable:
+   ```bash
+   export TAVILY_API_KEY=your_api_key_here
+   ```
 
-Domain skill configuration:
+### Filesystem
 
-```yaml
-skill:
-  name: creative
-  priority: 10
-  keywords:
-    - music
-    - art
-    - singer
-    
-  gathering:
-    skill_specific_questions:
-      - [question 1]
-      - [question 2]
-```
+1. Install:
+   ```bash
+   npm install -g @modelcontextprotocol/server-filesystem
+   ```
 
-## Configuration Priority
+2. Configure in your AI tool's MCP settings
 
-1. System defaults in `rules/`
-2. Skill-specific overrides
-3. User preferences (when provided)
+## Adding New Skills
+
+Skills are stored in `improver/skills/`. Each skill has:
+- `skill.yaml` - Configuration
+- `gather.md` - Questions to ask
+- `research.md` - Research focus
+- `patterns.md` - Common patterns
+
+To add a new skill, see `improver/skills/INDEX.md`.
+
+## Pattern Files
+
+Patterns are stored in `improver/patterns/`:
+- `base.md` - Universal patterns
+- `{domain}.md` - Domain-specific patterns
+
+Patterns are automatically extracted from your sessions to improve future recommendations.

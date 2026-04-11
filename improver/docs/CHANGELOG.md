@@ -1,35 +1,37 @@
-# Improver Changelog
+# Changelog
 
-All notable changes to this project will be documented in this file.
+All notable changes to Improver.
 
 ## [0.1.0] - 2026-04-09
 
 ### Added
-- Initial architecture release
-- Core prompts (system, gather, research, recommend)
-- 7 domain skills (base, career, creative, business, tech, health, education)
-- Pattern system with domain-specific patterns
-- Context and safety rules
-- MCP configuration for Tavily and Filesystem servers
-- Memory structure with INDEX
-- Comprehensive documentation (ARCHITECTURE, WORKFLOW, CONFIGURATION, INSTALL)
+- Initial release of Improver
+- 7 domain skills (career, creative, business, tech, health, education, base)
+- Pattern system with domain-specific recommendations
+- Privacy-first memory storage
+- Web search integration via MCP
+
+### Features
+- Structured problem analysis
+- Research-backed recommendations
+- Learning from past sessions
+- Specific questions (not generic)
 
 ### Structure
 ```
 improver/
-├── commands/          # Workflow definitions
+├── commands/          # /improve workflow
 ├── prompts/           # Phase templates
-├── skills/            # Domain skills
+├── skills/            # 7 domain skills
 ├── patterns/          # Learned patterns
-├── rules/             # Constraints
-├── memory/            # User history (gitignored)
-├── mcp/               # Tool integrations
-└── docs/              # Documentation
+├── rules/             # Safety & context
+├── memory/            # Your history (private)
+└── docs/             # Documentation
 ```
 
 ## Future Plans
 
-- [ ] Additional domain skills
-- [ ] MCP server implementations
-- [ ] CLI wrapper
-- [ ] Pattern learning automation
+- Additional domain skills
+- CLI wrapper
+- Pattern learning automation
+- Community patterns sharing

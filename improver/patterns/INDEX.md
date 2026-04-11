@@ -16,8 +16,8 @@ Each pattern follows this structure:
 ## Pattern Sources
 
 Patterns are defined in two locations:
-- `patterns/base.md` - Universal patterns
-- `patterns/{domain}.md` - Domain-specific patterns
+- `improver/patterns/base.md` - Universal patterns
+- `improver/patterns/{domain}.md` - Domain-specific patterns
 
 ## Active Patterns by Domain
 
@@ -127,12 +127,12 @@ Patterns are defined in two locations:
 
 Before recommending:
 1. Identify relevant domain from skill activation
-2. Load `patterns/base.md` for universal patterns
-3. Load `patterns/{domain}.md` for specialized patterns
+2. Load `improver/patterns/base.md` for universal patterns
+3. Load `improver/patterns/{domain}.md` for specialized patterns
 4. Match triggers to current problem
 5. Apply with appropriate adaptation
 6. Note pattern usage in memory entry
 
 ## Privacy Note
 
-The `memory/` folder is gitignored to protect user privacy. The pattern INDEX in this file serves as a master reference, but individual memory entries are private.
+The `improver/memory/` folder is gitignored to protect user privacy. The pattern INDEX in this file serves as a master reference, but individual memory entries are private.

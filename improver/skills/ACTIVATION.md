@@ -23,17 +23,17 @@ If multiple skills score equally:
 ### Step 3: Skill Loading
 
 Once skill is identified, load:
-1. `skills/{domain}/skill.yaml` - Configuration
-2. `skills/{domain}/gather.md` - Questions
-3. `skills/{domain}/research.md` - Research focus
-4. `skills/{domain}/patterns.md` - Domain patterns
+1. `improver/skills/{domain}/skill.yaml` - Configuration
+2. `improver/skills/{domain}/gather.md` - Questions
+3. `improver/skills/{domain}/research.md` - Research focus
+4. `improver/skills/{domain}/patterns.md` - Domain patterns
 
 ### Step 4: Universal Augmentation
 
 Always load base skill alongside domain skill:
-- `skills/base/gather.md` - Universal questions
-- `skills/base/research.md` - Research framework
-- `skills/base/patterns.md` - Universal patterns
+- `improver/skills/base/gather.md` - Universal questions
+- `improver/skills/base/research.md` - Research framework
+- `improver/skills/base/patterns.md` - Universal patterns
 
 ## Keyword Examples
 
@@ -60,16 +60,16 @@ Always load base skill alongside domain skill:
 
 ## Skill Files to Load
 
-```markdown
+```
 Always load:
-- prompts/system.md
-- prompts/01_gather.md OR 02_research.md OR 03_recommend.md (current phase)
-- skills/base/gather.md OR research.md OR patterns.md (current phase)
+- improver/prompts/system.md
+- improver/prompts/01_gather.md OR 02_research.md OR 03_recommend.md (current phase)
+- improver/skills/base/gather.md OR research.md OR patterns.md (current phase)
 
 If domain detected:
-- skills/{domain}/skill.yaml
-- skills/{domain}/gather.md OR research.md OR patterns.md (current phase)
-- patterns/{domain}.md
+- improver/skills/{domain}/skill.yaml
+- improver/skills/{domain}/gather.md OR research.md OR patterns.md (current phase)
+- improver/patterns/{domain}.md
 ```
 
 ## Domain Keywords Reference

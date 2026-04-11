@@ -1,112 +1,84 @@
-# Workflow Execution
+# How Improver Works
 
-Step-by-step procedures for Improver operation.
+A step-by-step explanation of the problem-solving process.
 
-## Phase Execution Order
+## The Process
 
-```
-/improve [problem]
-    ↓
-[Load Command] commands/improve.md
-    ↓
-[Identify Domain] skills/*/skill.yaml
-    ↓
-┌─────────────────────────────────────┐
-│ PHASE 1: GATHER                      │
-│ Read: prompts/01_gather.md           │
-│ Read: skills/{domain}/gather.md      │
-│ Ask: domain-specific questions       │
-│ Wait: user responses                 │
-│ Stop: when context is complete        │
-└─────────────────────────────────────┘
-    ↓
-┌─────────────────────────────────────┐
-│ PHASE 2: RESEARCH                    │
-│ Read: prompts/02_research.md         │
-│ Read: skills/{domain}/research.md    │
-│ Generate: search queries              │
-│ Execute: web searches                 │
-│ Synthesize: findings                  │
-│ Iterate: if new topics emerge         │
-└─────────────────────────────────────┘
-    ↓
-┌─────────────────────────────────────┐
-│ PHASE 3: RECOMMEND                   │
-│ Read: prompts/03_recommend.md        │
-│ Read: patterns/{domain}.md           │
-│ Read: patterns/base.md               │
-│ Search: memory/history/ for similar   │
-│ Generate: prioritized recommendations │
-│ Assess: risks and alternatives        │
-└─────────────────────────────────────┘
-    ↓
-┌─────────────────────────────────────┐
-│ PHASE 4: STORE                       │
-│ Create: memory/history/{date}_{id}.md │
-│ Update: memory/INDEX.md              │
-│ Extract: new patterns if applicable  │
-│ Update: patterns/{domain}.md          │
-└─────────────────────────────────────┘
-    ↓
-[Present Recommendations to User]
-```
-
-## Question Flow
+When you type `/improve <your problem>`, here's what happens:
 
 ```
-Start with universal questions
-    ↓
-Detect domain from keywords
-    ↓
-Switch to domain-specific questions
-    ↓
-Follow up on interesting answers
-    ↓
-Close gaps with targeted questions
-    ↓
-Summarize and confirm
-    ↓
-Proceed to research
+You: /improve I want to get an internship
+        ↓
+    ┌─────────────────────────────────────┐
+    │ PHASE 1: UNDERSTAND YOU             │
+    │                                     │
+    │ Ask questions about your specific    │
+    │ situation (not generic questions)    │
+    │                                     │
+    │ Example: "You mentioned you're a      │
+    │ 2nd year student - what's your      │
+    │ target timeline?"                   │
+    └─────────────────────────────────────┘
+        ↓
+    ┌─────────────────────────────────────┐
+    │ PHASE 2: RESEARCH                   │
+    │                                     │
+    │ Search for information specific      │
+    │ to your situation                   │
+    │                                     │
+    │ Example: "internship programs for    │
+    │ second-year students in 2026"       │
+    └─────────────────────────────────────┘
+        ↓
+    ┌─────────────────────────────────────┐
+    │ PHASE 3: RECOMMEND                  │
+    │                                     │
+    │ Present actionable recommendations    │
+    │ based on YOUR specific context       │
+    │                                     │
+    │ Grouped by timeframe:               │
+    │ • This week                         │
+    │ • Next few months                   │
+    │ • Long-term strategy                │
+    └─────────────────────────────────────┘
+        ↓
+    ┌─────────────────────────────────────┐
+    │ PHASE 4: LEARN                       │
+    │                                     │
+    │ Save your case to memory for         │
+    │ future reference                    │
+    └─────────────────────────────────────┘
 ```
 
-## Research Flow
+## What You'll Experience
 
-```
-Extract key concepts from context
-    ↓
-Generate 3-5 search queries
-    ↓
-Execute searches
-    ↓
-Evaluate source quality
-    ↓
-Extract key findings
-    ↓
-Identify contradictions
-    ↓
-Synthesize into insights
-    ↓
-Check for new topics
-    ↓
-If new topics: iterate, else proceed
-```
+### Questions You'll Answer
 
-## Recommendation Flow
+The questions are tailored to YOUR situation:
 
-```
-Load applicable patterns
-    ↓
-Search memory for similar problems
-    ↓
-Identify what worked for similar cases
-    ↓
-Generate recommendations by timeframe
-    ↓
-Prioritize by impact/effort ratio
-    ↓
-Assess risks
-    ↓
-Format for user
-    ↓
-Store for future reference
-```
+- "You mentioned Python and JavaScript - which do you prefer for backend work?"
+- "Your goal is AI/ML internships in 2026 - are you open to remote positions?"
+
+NOT generic questions like:
+- "What's your skill level?"
+- "What's your budget?"
+
+### Recommendations You'll Receive
+
+Based on your specific context:
+
+**Immediate Actions (This Week)**
+- Apply to X programs that specifically target 2nd-year students
+- Build Y project using Z technology
+
+**Short-term Goals (1-3 Months)**
+- Reach Z followers on LinkedIn
+- Complete LeetCode practice plan
+
+**Long-term Strategy (6-12 Months)**
+- Build portfolio with specific projects
+- Network with specific people/groups
+
+## Your Privacy
+
+Your conversation and problem details are stored privately in `improver/memory/history/` and never shared.

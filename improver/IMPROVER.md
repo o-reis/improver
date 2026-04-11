@@ -5,6 +5,22 @@
 
 ---
 
+## IMPORTANT: DO NOT SKIP THE FILE LOADING SEQUENCE
+
+⚠️ **When `/improve` is invoked, you MUST load ALL files in the exact order specified in `improver/commands/improve.md`.**
+
+**DO NOT jump straight to questions. DO NOT use this file as a shortcut.**
+
+The correct workflow is:
+1. Load `improver/commands/improve.md` FIRST
+2. Load all 16 files listed in the file loading sequence
+3. Perform initial web search
+4. ONLY THEN ask questions
+
+See `improver/commands/improve.md` for the complete file loading sequence.
+
+---
+
 ## Purpose
 
 Improver is a **context engineering architecture** for AI agentic tools that provides:
@@ -13,12 +29,6 @@ Improver is a **context engineering architecture** for AI agentic tools that pro
 2. **Research Execution** - Web search and synthesis
 3. **Context Optimization** - Memory management and patterns
 4. **Decision Enhancement** - Skill-based recommendations
-
-## Quick Start
-
-```
-/improve <problem statement>
-```
 
 ## Architecture
 

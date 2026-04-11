@@ -1,73 +1,52 @@
-# Architecture Documentation
+# Architecture Overview
 
-Detailed technical specifications for Improver.
+How Improver works under the hood.
 
 ## System Overview
 
-Improver is a context engineering architecture that enhances AI agentic tools through:
-- Structured prompt templates
-- Domain-specific skills
-- Pattern-based recommendations
-- Persistent memory
+Improver is a context engineering system that helps AI assistants provide better recommendations through:
 
-## File Types
+- **Structured Questions** - Understanding your specific situation
+- **Research** - Finding relevant information
+- **Patterns** - Learning from past cases
+- **Memory** - Remembering your history
 
-| Type | Purpose | Format |
-|------|---------|--------|
-| Commands | Workflow definitions | Markdown |
-| Prompts | Instruction templates | Markdown |
-| Rules | Behavior constraints | YAML |
-| Skills | Domain knowledge | Markdown + YAML |
-| Memory | Problem history | Markdown |
-| Patterns | Learned insights | Markdown |
+## Folder Structure
 
-## Context Assembly
-
-When Improver activates:
-
-1. **Load System Prompt** → `prompts/system.md`
-2. **Detect Domain** → Match keywords to `skills/*/skill.yaml`
-3. **Check Memory** → Search `memory/history/` for similar problems
-4. **Apply Patterns** → Load from `patterns/*.md`
-5. **Execute Phases** → Gather → Research → Recommend
-6. **Store Results** → Save to `memory/history/`
-
-## Rule Priority
-
-When rules conflict:
-1. Safety rules (highest)
-2. Context rules
-3. Skill-specific rules
-4. User preferences
-
-## Pattern Matching
-
-Patterns are matched by:
-1. Domain tag
-2. Problem keywords
-3. Outcome similarity
-4. Recency weight
-
-## Memory Format
-
-Each memory entry:
-```markdown
-# [Problem Title]
-
-**Date:** YYYY-MM-DD  
-**Domain:** skill name  
-**Tags:** relevant tags  
-
-## Problem
-[User's stated problem]
-
-## Context
-[Gathered information]
-
-## Recommendations
-1. [Action]
-2. [Action]
-
-## Outcome
-[Follow-up when available]
 ```
+improver/
+├── commands/          # Workflow definitions
+├── prompts/           # Phase templates
+├── skills/            # 7 domain skills
+├── patterns/          # Learned patterns
+├── rules/             # Safety constraints
+├── memory/            # Your problem history (private)
+└── mcp/              # Tool integrations
+```
+
+## How It Works
+
+When you use `/improve`:
+
+1. **Gather** - Questions tailored to your situation
+2. **Research** - Web search for relevant information
+3. **Recommend** - Actionable guidance based on your context
+4. **Remember** - Stores your case for future reference
+
+## Available Skills
+
+Improver has specialized knowledge in:
+
+| Skill | What it helps with |
+|-------|-------------------|
+| **Career** | Jobs, interviews, promotions, resumes |
+| **Creative** | Music, art, writing, performance |
+| **Business** | Startups, entrepreneurship, growth |
+| **Tech** | Programming, software development |
+| **Health** | Fitness, nutrition, wellness |
+| **Education** | Learning, studying, certifications |
+| **Base** | General problems |
+
+## Privacy
+
+Your memory is stored locally in `improver/memory/history/` and is gitignored by default to protect your privacy.

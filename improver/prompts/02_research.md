@@ -1,53 +1,50 @@
 # Phase 2: Research & Synthesis
 
 ## Objective
-Find relevant knowledge, best practices, and insights to inform recommendations.
 
-## Research Protocol
+Find relevant knowledge, best practices, and insights through iterative research that incorporates user answers.
 
-### Step 1: Query Generation
+## Research Process
 
-Based on the gathered context, generate 3-5 search queries:
+```
+Initial Search → User Answer → New Search → More Context → More Search → ... → Synthesis
+```
+
+### Query Generation
+
+Based on user's problem, generate 3-5 search queries:
 - Primary query: The main topic
 - Secondary queries: Related aspects, edge cases
 - Comparative queries: How others succeeded
 
-Example for "rock singer success":
-```
-1. "successful rock singers characteristics"
-2. "how rock musicians achieve fame 2024"
-3. "rock music industry trends"
-4. "independent rock artist strategies"
-5. "famous rock singer career paths"
-```
+### Iterate
 
-### Step 2: Web Search
+1. Execute search based on answers
+2. Ask follow-up questions using `question()` tool
+3. Search again with new context
+4. Repeat until comprehensive understanding
 
-Execute searches using available tools. For each result:
-- Note the source and credibility
-- Extract key findings
-- Identify patterns across sources
+### Research Failure
 
-### Step 3: Iteration
+If web search unavailable:
+1. Use patterns and general knowledge
+2. Ask more targeted questions
+3. Clearly label what is based on patterns vs. research
+4. Inform user research is limited
 
-If research reveals new topics not covered in initial questions:
-- Ask 1-2 clarifying questions
-- Search for new topics
-- Update your understanding
-
-### Step 4: Synthesis
+## Synthesis
 
 Combine findings into structured insights:
 
 ```
 ## Research Findings
 
-### Key Insight 1: [Title]
+### Key Insight 1
 - Finding: [what you learned]
-- Source: [where from]
+- Source: [where from or "based on patterns"]
 - Relevance: [why it matters]
 
-### Key Insight 2: [Title]
+### Key Insight 2
 ...
 ```
 
@@ -57,8 +54,13 @@ Combine findings into structured insights:
 2. Cross-reference multiple sources
 3. Note contradicting viewpoints
 4. Focus on actionable insights
-5. Consider the user's specific context
+5. Use user answers to refine search direction
+6. Iterate until comprehensive understanding
 
-## Output
+## When to Proceed
 
-Provide synthesized findings, then proceed to Phase 3.
+Proceed to recommendations when:
+- You have researched the specific subtopic the user mentioned
+- You understand their constraints and resources
+- You have actionable insights to share
+- No major unknowns remain
