@@ -43,11 +43,11 @@ research:
     - Funding landscape
     
   query_templates:
-    - "{industry} market size 2024"
+    - "{industry} market size {current_year}"
     - "startup {stage} best practices"
     - "business model canvas {industry}"
     - "{competitor} analysis"
-    - "startup funding trends 2024"
+    - "startup funding trends {current_year}"
 
 patterns:
   source: patterns/business.md

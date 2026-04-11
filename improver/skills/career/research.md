@@ -11,7 +11,7 @@
 - What is the competition like?
 
 **Sample Queries:**
-- "jobs in demand 2024 2025"
+- "jobs in demand {current_year} {current_year+1}"
 - "{industry} hiring trends"
 - "{role} job market"
 - "career transitions trending"

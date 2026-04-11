@@ -11,7 +11,7 @@
 - How steep is the learning curve?
 
 **Queries:**
-- "{stack} vs {alternative} comparison 2024"
+- "{stack} vs {alternative} comparison {current_year}"
 - "{language} job market trends"
 - "{framework} community size"
 - "{technology} enterprise adoption"

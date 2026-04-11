@@ -46,7 +46,7 @@ research:
     
   query_templates:
     - "{role} career path examples"
-    - "{industry} job market trends 2024"
+    - "{industry} job market trends {current_year}"
     - "skills needed for {target_role}"
     - "{role} salary range"
     - "how to transition to {field}"

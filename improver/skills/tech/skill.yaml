@@ -43,7 +43,7 @@ research:
     - Security considerations
     
   query_templates:
-    - "{technology} best practices 2024"
+    - "{technology} best practices {current_year}"
     - "{language} vs {alternative}"
     - "{problem} solution architecture"
     - "{framework} performance benchmark"

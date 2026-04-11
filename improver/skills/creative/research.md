@@ -12,7 +12,7 @@
 - Music discovery algorithms
 
 **Research Queries:**
-- "independent musician success statistics 2024"
+- "independent musician success statistics {current_year}"
 - "Spotify algorithm for artist discovery"
 - "how independent artists make money"
 - "music industry gatekeepers changing"

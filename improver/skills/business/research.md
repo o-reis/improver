@@ -10,7 +10,7 @@
 **Queries:**
 - "{industry} market size"
 - "{industry} market growth rate"
-- "{industry} trends 2024"
+- "{industry} trends {current_year}"
 
 ### Competitive Landscape
 - Who are the main players?
@@ -53,7 +53,7 @@
 - What are typical valuations?
 
 **Queries:**
-- "{industry} funding trends 2024"
+- "{industry} funding trends {current_year}"
 - "{stage} startup valuation"
 - "investor preferences {industry}"
 

@@ -43,7 +43,7 @@ research:
     - Industry trends and shifts
     
   query_templates:
-    - "independent {discipline} success stories 2024"
+    - "independent {discipline} success stories {current_year}"
     - "how to build {genre} audience"
     - "{discipline} industry gatekeepers"
     - "social media for {discipline}"
