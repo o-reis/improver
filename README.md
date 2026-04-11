@@ -2,11 +2,11 @@
 
 **Context Engineering Architecture for AI Agentic Tools**
 
-A systematic framework for improving AI decision-making through structured information gathering, research, and recommendations. 
+A systematic framework for Claude Code or OpenCode  for improving AI decision-making through structured information gathering, research, and recommendations. 
 
 ## IMPORTANT
 
-This README.md as well as all the files were initially made using OpenCode "Big Pickle" AI "agentic" model. There may exist some inaccuracies that I haven't found yet. I am still doing tests to ensure the framework works properly.
+This README.md as well as all the files were initially made using OpenCode "Big Pickle" AI "agentic" model. There may exist some inaccuracies that I haven't found yet. I am still doing tests to ensure the framework works properly. **This framework is token-intensive, since the model has to load all relevant files (around 18 small files) to fully implement the framework. For that reason, I recommend using this framework with OpenCode, since its free (11/04/2026).**
 
 ## What Is Improver?
 
